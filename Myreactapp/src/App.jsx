@@ -1,17 +1,21 @@
-import Student from "./student"
 
-
-function App() {
- return(
-<>
-<Student name="swagger" age={30} isStudent={true}/>
-<Student name="swaggerbig" age={32} isStudent={false}/>
-<Student />
- </>
- )
-
- 
-   
+function AlertButton({ message, children }) {
+    return (
+      <button onClick={() => alert(message)}>
+        {children}
+      </button>
+    );
+  }
+  
+  export default function Toolbar() {
+    return (
+      <div>
+        <AlertButton message="Playing!">
+          Play Movie
+        </AlertButton>
+        <AlertButton message="Uploading!">
+          Upload Image
+          </AlertButton>
+    </div>
+  );
 }
-
-export default App
