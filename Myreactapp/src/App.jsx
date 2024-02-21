@@ -1,12 +1,9 @@
-
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import Todolist from "./Todolist"
 
 function App() {
  return(
 <>
- <Header/>
- <Footer/>
+<Todolist/>
  
 </>
  )
